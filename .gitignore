@@ -1,0 +1,78 @@
+# ====================================================================
+# 1. CORE SENSITIVE DATA & ENV FILES (CRITICAL)
+# ====================================================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.pem
+*.key
+*.p12
+*.jks
+credentials.json
+secrets/
+
+# ====================================================================
+# 2. REACTJS APP RULES
+# ====================================================================
+# Ignore dependencies
+**/node_modules/
+node_modules/
+
+# Ignore production builds
+**/build/
+**/dist/
+**/out/
+
+# Logs and coverage
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+**/coverage/
+
+# ====================================================================
+# 3. SPRING BOOT RULES (Java / Maven / Gradle)
+# ====================================================================
+# Target and build outputs
+**/target/
+**/build/
+bin/
+.gradle/
+
+# Application logs
+*.log
+logs/
+
+# Java/Maven package outputs
+*.jar
+*.war
+*.zip
+hs_err_pid*
+
+# ====================================================================
+# 4. CHROME EXTENSION RULES
+# ====================================================================
+# Ignore compiled crx extension packages
+*.crx
+
+# Developer signature files
+key.pem
+*.pem
+
+# Local testing user profiles/storage dumps from loading unpacked extensions
+.chrome-user-data/
+chrome-profile/
+manifest.fingerprint
+
+# ====================================================================
+# 5. IDE & SYSTEM JUNK
+# ====================================================================
+.idea/
+*.iml
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
